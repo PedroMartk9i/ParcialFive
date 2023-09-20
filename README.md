@@ -5,4 +5,4 @@ Integrantes:
 4. Andrés Amado
 5. Juan Sebastian Moreno
 
-Link al repositorio: https://github.com/PedroMartk9i/ParcialFivegit
+Link al repositorio: https://github.com/PedroMartk9i/ParcialFive.git
