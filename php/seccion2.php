@@ -18,8 +18,9 @@
 
     <h3>
         <?php
-
+            //Creamos un array que guardara las edades ingresadas
             $ingresos= array();
+            //Contador de ingresos
             $suma=0;
             
 
