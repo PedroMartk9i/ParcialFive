@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://img.freepik.com/free-vector/gradient-blue-dynamic-lines-background_23-2148995926.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
