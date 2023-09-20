@@ -34,7 +34,7 @@
             if ($i == $n1) {
                 break;
             }
-            if(is_int($i)==1) {
+            if(is_int($n1/$i)==1) {
                 $contador1=$contador1+$i;
             }
         }
@@ -42,7 +42,7 @@
             if ($i == $n2) {
                 break;
             }
-            if(is_int($i)==1) {
+            if(is_int($n2/$i)==1) {
                 $contador2=$contador2+$i;
             }
         }
