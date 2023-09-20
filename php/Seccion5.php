@@ -6,7 +6,7 @@
 <body>
     <h1>Seccion 5: Numeros cubifinitos</h1>
 
-    <form method="post" action="index.php">
+    <form method="post" action="Seccion5.php">
         <label for="message">Ingresa el numero:</label>
         <input type="text" name="message" id="message" required>
         <input type="submit" value="Enviar">
