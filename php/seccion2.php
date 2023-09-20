@@ -19,22 +19,34 @@
     <h3>
         <?php
             //Creamos un array que guardara las edades ingresadas
-            $ingresos= array();
+            
             //Contador de ingresos
-            $suma=0;
+
+            session_start();
+
+             if (!isset($_SESSION['ingresos'])){
+                $_SESSION['ingresos']=array();
+                $_SESSION ['suma']=0;
+             }
+            
+
+
+            
             
 
             if ($_SERVER["REQUEST_METHOD"]=="GET"){
                 if (isset($_GET['totales'])){
                     $ingreso= $_GET['totales'];
+
+
                     if ($ingreso==0){
-                        echo "Edades ingresadas: " . implode(", ", $ingresos);
-                        echo "<br> Suma total de ingresos: " . $suma;
+                        echo "Edades ingresadas: " . implode(", ", $_SESSION['ingresos']);
+                        echo "<br> Suma total de ingresos: " . $_SESSION['suma'];
                     } else {
                         // Verifica si el ingreso es un número válido antes de agregarlo al array
                         if (is_numeric($ingreso)) {
-                            $ingresos[] = $ingreso; // Agrega el ingreso al array
-                            $suma += (float)$ingreso; // Actualiza la suma
+                            $_SESSION['ingresos'][] = $ingreso; // Agrega el ingreso al array
+                            $_SESSION['suma'] += (float)$ingreso; // Actualiza la suma
 
                         }
                 }    }
