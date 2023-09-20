@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seccion 2 </title>
 </head>
+
 <body>
     <h1>FIESTA EN BUCARAMANGA</h1>
     <h2>Integrantes aqui</h2>
@@ -17,12 +18,17 @@
     </form>
 
     <h3>
+        
+
         <?php
+
+           
             //Creamos un array que guardara las edades ingresadas
             
             //Contador de ingresos
 
             session_start();
+            
 
              if (!isset($_SESSION['ingresos'])){
                 $_SESSION['ingresos']=array();
@@ -46,7 +52,7 @@
                         // Verifica si el ingreso es un número válido antes de agregarlo al array
                         if (is_numeric($ingreso)) {
                             $_SESSION['ingresos'][] = $ingreso; // Agrega el ingreso al array
-                            $_SESSION['suma'] += (float)$ingreso; // Actualiza la suma
+                            $_SESSION['suma'] ++;
 
                         }
                 }    }
